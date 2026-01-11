@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with subtle border -->
+  <rect width="80" height="80" fill="#0f0f0f" stroke="#333" stroke-width="1.5" rx="12"/>
+  
+  <!-- Code icon container -->
+  <g transform="translate(20, 20)">
+    <!-- Hexagon shape -->
+    <polygon points="20,5 30,12.5 30,27.5 20,35 10,27.5 10,12.5" 
+             fill="#1a1a1a" stroke="#f0f0f0" stroke-width="2.5"/>
+    
+    <!-- Code symbol inside hexagon -->
+    <text x="20" y="25" font-family="'Courier New', monospace" font-size="16" 
+          fill="#f0f0f0" text-anchor="middle" dominant-baseline="middle">&lt;/&gt;</text>
+  </g>
+  
+  <!-- Decorative code elements -->
+  <g fill="#f0f0f0" opacity="0.4">
+    <!-- Binary pattern -->
+    <text x="60" y="25" font-family="'Courier New', monospace" font-size="6">101</text>
+    <text x="60" y="35" font-family="'Courier New', monospace" font-size="6">110</text>
+    <text x="60" y="45" font-family="'Courier New', monospace" font-size="6">010</text>
+    
+    <!-- Brackets -->
+    <text x="65" y="60" font-family="'Courier New', monospace" font-size="12">{</text>
+    <text x="70" y="70" font-family="'Courier New', monospace" font-size="12">}</text>
+  </g>
+  
+  <!-- Subtle glow effect -->
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+</svg>
+
